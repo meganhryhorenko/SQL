@@ -1,0 +1,25 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, aisle INTEGER, color TEXT);
+INSERT into store values (1, "banana", 1, 1, "yellow");
+INSERT into store values (2, "strawberry", 1, 1, "red");
+insert into store values (3, "brownies" , 2, 5, "brown");
+insert into store values (4, "rice", 6, 3, "white");
+insert into store values (5, "milk", 3, 10, "white");
+insert into store values (6, "soup", 3, 5, "yellow");
+insert into store values (7, "OJ", 4, 10, "yellow");
+insert into store values (8, "grapes", 4, 1, "green");
+insert into store values (9, "pizza", 7, 11, "brown");
+insert into store values (10, "cereal", 6, 7, "brown");
+insert into store values (11, "muffin", 4, 4, "brown");
+insert into store values (12, "PB", 5, 5, "brown");
+insert into store values (13, "jelly", 4, 5, "purple");
+insert into store values (14, "bread", 2, 5, "brown");
+insert into store values (15, "meat", 13, 8, "red");
+SELECT * FROM store order by price
+
+
+
+
+
+
+
+
