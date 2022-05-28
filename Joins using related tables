@@ -1,0 +1,14 @@
+create table famous (id INTEGER, first_name TEXT, last_name TEXT, job TEXT);
+INSERT INTO famous VALUES (1, "Johnny", "Depp", "actor");
+INSERT INTO famous VALUES (2, "Brad", "Pitt", "actor");
+INSERT INTO famous VALUES (3, "Ron", "White", "comedian");
+INSERT INTO famous VALUES (4, "Rod", "Stewart", "singer");
+INSERT INTO famous VALUES (5, "Bill", "Gates", "CEO");
+
+CREATE TABLE giving (id INTEGER, first_name TEXT, last_name TEXT, donation_amount INTEGER);
+insert into giving VALUES (1, "Johnny", "Depp", "10000");
+insert into giving values (2, "Brad", "Pitt", "500");
+insert into giving values (3, "Ron", "White", "1000");
+insert into giving values (4, "Rod", "stewart", "200000");
+insert into giving values (5, "bill", "gates", "10000000");
+select famous.first_name, famous.last_name, giving.donation_amount FROM famous  JOIN giving ON famous.first_name = giving. first_name WHERE donation_amount>750
