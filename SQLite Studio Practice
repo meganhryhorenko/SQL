@@ -38,3 +38,10 @@ group by product
 
 How many customers ordered more than 2 products at a time, 
 and what was the average amount spent for those customers?
+
+
+List all the products sold in Los Angeles in February, and include how many of each were sold.
+SELECT Product, SUM(quantity)
+FROM BIT_DB.FebSales
+WHERE location like '%Los Angeles%'
+GROUP BY Product
